@@ -26,10 +26,17 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
       <script src="js/bootstrap.js"></script>
+      <script>
+         function getNegative() { 
+            var negatives = [ "No", "No way!", "Hello no", "Really?", "Negatory", "What do you think Caitlin would say?"]
+            var random = Math.floor(Math.random()*negatives.length);
+            return negatives[ random ]
+         }
+      </script>
       <script> 
          $('#expense').keypress( function() { 
-            $('#response').text("No")
-         })
+            $('#response').text( getNegative() );
+         });
       </script> 
    </body> 
 </html>
