@@ -47,8 +47,8 @@
       </script>
       <script> 
          $('#expense').keypress( function() { 
-
             $('#response').html( getNegative() );
+            _gaq.push(['_trackEvent','Expenses','Tried',$('#expense').val(),1]);
          });
       </script> 
    </body> 
